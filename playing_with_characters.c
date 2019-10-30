@@ -14,9 +14,9 @@ int main() {
     scanf(" %[^\n]%*c", &sen);
     
     
-    printf("%c\n", &ch);
-    printf("%s\n", &word);
-    printf("%s\n", &sen);
+    printf("%c\n", ch);
+    printf("%s\n", word);
+    printf("%s\n", sen);
 
 
 
