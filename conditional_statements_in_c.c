@@ -18,7 +18,7 @@ int main()
 
     if (n_endptr == n_str || *n_endptr != '\0') {exit(EXIT_FAILURE);}
 
-    if (n > 1 && n < 10) {
+    if (n >= 1 && n < 10) {
         if (n == 1) {
             printf("%s", "one");
         }
