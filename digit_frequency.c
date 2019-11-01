@@ -14,7 +14,8 @@ int main () {
 
     int count_one = 0, count_two = 0, count_three = 0, count_four = 0, count_five = 0, count_six = 0, count_seven = 0, count_eight = 0, count_nine = 0;
     for (int i = 0; i < strlen(s); i++) {
-        if (s[i] == '1') {
+        if (s[i] == '0') {
+        }  else if (s[i] == '1') {
             count_one++;
         } else if (s[i] == '2') {
             count_two++;
