@@ -11,8 +11,6 @@ int main () {
         scanf("%d", arr + i);
     }
 
-    printf("%d\n", arr[0]);
-
     /* Reverse */
     for(i = 0; i < (num / 2); i++) {
         temp = arr[i];
