@@ -4,10 +4,11 @@
 #include <stdlib.h>
 
 void calculate_the_maximum(int n, int k) {
-    int a = 1, b = 2;
+    int a = 1, b = 1;
     int max_and = 0, max_or = 0, max_xor = 0;
 
-    while (a < b) {
+    while (a <= n) {
+        b = a + 1;
         while (b <= n) {
             if ((a & b) > max_and && (a & b) < k) {
                 max_and = a & b;
@@ -23,7 +24,7 @@ void calculate_the_maximum(int n, int k) {
             b++;
         }
         a++;
-        b = a + 1;
+
     }
     printf("%d\n%d\n%d\n", max_and, max_or, max_xor);
     /* return max_and, max_or, max_xor; */ 
@@ -31,6 +32,7 @@ void calculate_the_maximum(int n, int k) {
 
 int main() {
     int n, k;
+    int max_and, max_or, max_xor;
 
     scanf("%d %d", &n, &k);
     calculate_the_maximum(n, k);
