@@ -1,7 +1,8 @@
 read i
 
-if (($i == "Y")) || (($i == "y")); then
+if [[ $i == "Y" || $i == "y" ]] 
+then
     echo "YES"
-elif (($i == "N")) || (($i == "n")); then
+else
     echo "NO"
 fi
